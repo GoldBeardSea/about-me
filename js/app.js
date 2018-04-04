@@ -65,11 +65,18 @@ while(guessesRemaining > 0) {
 // var statesRemaining = 6
 
 var statesLived = ['CALIFORNIA', 'VIRGINIA', 'TENNESSEE', 'GEORGIA', 'GERMANY', 'AFGHANISTAN'];
-var sateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
+// var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
 
-for(var guessesTotal = 6; i < 0; i--) {
-  if(sateGuess === statesLived[i]) {
+// console.log('state:', stateGuess);
+// console.log(typeof stateGuess);
+
+for(var i = 0; i < 6; i++) {
+  var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
+  console.log('state:', stateGuess);
+  if(stateGuess === statesLived[5]) {
     alert('Correct!');
     break;
+  } else {
+    alert('Try Again')
   }
 }
