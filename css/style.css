@@ -25,6 +25,7 @@ div {
   border: dashed rgb(0, 0, 0);
   width: 35%;
   padding: 5px;
+  background-color: lightcoral
 }
 body ol {
   list-style: disc;

@@ -5,39 +5,39 @@ alert('Alright, it is time to play a game, please answer Yes/No or Y/n');
 var questionCat = prompt('Do I love cats?').toUpperCase();
 console.log(questionCat);
 if(questionCat === "YES" || questionCat === "Y") {
-  alert('That is correct!');
+  alert('Yes! I help foster and raise cats for adoption.');
 } else {
-  alert('That is not correct!');
+  alert('Smooth move, ExLax! Goose egg on this one.');
 }
 
 var questionMusic = prompt('Do I make experimental music?').toUpperCase();
 console.log(questionMusic);
 if(questionMusic === "YES" || questionMusic === "Y") {
-  alert('That is correct!');
+  alert('I friggen love playing the WEIRD stuff!');
 } else {
-  alert('That is not correct!');
+  alert('What do you think I am, the Monkees?!');
 }
 
 var questionPeeps = prompt('Do I love eating peeps?').toUpperCase();
 console.log(questionPeeps);
 if(questionPeeps === "NO" || questionPeeps === "N") {
-  alert('That is correct!');
+  alert('Normal marshmallow is tasty enough, heck no to peeps!');
 } else {
-  alert('That is not correct!');
+  alert('Get out of town! WRONG.');
 }
 
 var questionLingual = prompt('Is english the only language that I speak?').toUpperCase();
 console.log(questionLingual);
 if(questionLingual === "NO" || questionLingual === "N") {
-  alert('That is correct!');
+  alert('Richtig, I grew up speaking German and English!');
 } else {
-  alert('That is not correct!');
+  alert('Wrong, bucko, ich spreche Deutsch');
 } 
 
 var questionSeason = prompt('Do I hate summer as a season?').toUpperCase();
 console.log(questionSeason);
 if(questionSeason === "YES" || questionSeason === "Y") {
-  alert('That is correct!');
+  alert('Yes, the temperature of the earth is too damn high!');
 } else {
-  alert('That is not correct!');
+  alert('Wrong, give me the Winter.');
 }
