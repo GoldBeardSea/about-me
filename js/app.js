@@ -61,3 +61,15 @@ while(guessesRemaining > 0) {
     
   }
 }
+
+// var statesRemaining = 6
+
+var statesLived = ['CALIFORNIA', 'VIRGINIA', 'TENNESSEE', 'GEORGIA', 'GERMANY', 'AFGHANISTAN'];
+var sateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
+
+for(var guessesTotal = 6; i < 0; i--) {
+  if(sateGuess === statesLived[i]) {
+    alert('Correct!');
+    break;
+  }
+}
