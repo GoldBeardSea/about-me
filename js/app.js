@@ -7,7 +7,7 @@ alert('Alright ' + userName + ' it is time to play a game, please answer Yes/No 
 
 function callCat(){
   var questionCat = prompt('Do I love cats?').toUpperCase();
-console.log(questionCat);
+  console.log(questionCat);
   if(questionCat === 'YES' || questionCat === 'Y') {
     questionCorrect++;
     alert('Yes! I help foster and raise cats for adoption.');
@@ -17,14 +17,18 @@ console.log(questionCat);
 }
 callCat();
 
-// var questionMusic = prompt('Do I make experimental music?').toUpperCase();
-// console.log(questionMusic);
-// if(questionMusic === 'YES' || questionMusic === 'Y') {
-//   questionCorrect++;
-//   alert('I friggen love playing the WEIRD stuff!');
-// } else {
-//   alert('What do you think I am, the Monkees?!');
-// }
+function callMusic(){
+  var questionMusic = prompt('Do I make experimental music?').toUpperCase();
+  console.log(questionMusic);
+  if(questionMusic === 'YES' || questionMusic === 'Y') {
+    questionCorrect++;
+    alert('I friggen love playing the WEIRD stuff!');
+  } else {
+    alert('What do you think I am, the Monkees?!');
+  }
+}
+callMusic();
+console.log(questionCorrect);
 
 // var questionPeeps = prompt('Do I love eating peeps?').toUpperCase();
 // console.log(questionPeeps);
