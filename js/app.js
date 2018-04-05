@@ -1,5 +1,7 @@
 'use strict';
+var questionCorrect = 0
 
+console.log(questionCorrect)
 // alert('Alright, it is time to play a game, please answer Yes/No or Y/n');
 
 // var questionCat = prompt('Do I love cats?').toUpperCase();
@@ -57,26 +59,39 @@ while(guessesRemaining > 0) {
   }
   if(parseInt(questionGear) === 16) {
     alert('That is correct');
+    questionCorrect++;
     break;
     
   }
 }
 
-// var statesRemaining = 6
+console.log(questionCorrect)
+
+var statesRemaining = 6
 
 var statesLived = ['CALIFORNIA', 'VIRGINIA', 'TENNESSEE', 'GEORGIA', 'GERMANY', 'AFGHANISTAN'];
 // var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
-
+var foundAnswer = false
 // console.log('state:', stateGuess);
 // console.log(typeof stateGuess);
 
-for(var i = 0; i < 6; i++) {
+while (statesRemaining > 0)  {
   var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
-  console.log('state:', stateGuess);
-  if(stateGuess === statesLived[5]) {
-    alert('Correct!');
-    break;
-  } else {
-    alert('Try Again')
-  }
+  statesRemaining--;
+  for(var i = 0; i < statesLived.length; i++) {
+    console.log('state:', stateGuess);
+    if(stateGuess === statesLived[i]) {
+      foundAnswer = true;
+      break
+    }
+  } 
+    if(foundAnswer === true){
+      alert('Correct')
+      questionCorrect++;
+      break
+    } else {
+      alert('Try again')
+    }
 }
+
+console.log(questionCorrect)
