@@ -100,10 +100,10 @@ console.log(questionCorrect);
 var statesRemaining = 6;
 
 var statesLived = ['CALIFORNIA', 'VIRGINIA', 'TENNESSEE', 'GEORGIA', 'GERMANY', 'AFGHANISTAN'];
-// var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
+var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
 var foundAnswer = false;
-// console.log('state:', stateGuess);
-// console.log(typeof stateGuess);
+console.log('state:', stateGuess);
+console.log(typeof stateGuess);
 
 function callStates(){
   while (statesRemaining > 0) {
