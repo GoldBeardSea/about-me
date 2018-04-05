@@ -3,7 +3,9 @@
 var questionCorrect = 0
 
 console.log(questionCorrect)
-alert('Alright, it is time to play a game, please answer Yes/No or Y/n');
+
+var userName = prompt('Might I ask your name first?')
+alert('Alright ' + userName + ' it is time to play a game, please answer Yes/No or Y/n');
 
 var questionCat = prompt('Do I love cats?').toUpperCase();
 console.log(questionCat);
@@ -88,17 +90,18 @@ while (statesRemaining > 0)  {
     console.log('state:', stateGuess);
     if(stateGuess === statesLived[i]) {
       foundAnswer = true;
-      break
+      break;
     }
   } 
     if(foundAnswer === true){
       alert('Correct')
       questionCorrect++;
-      break
+      break;
     } else {
       alert('Try again')
     }
 }
 
-alert('You guessed ' + questionCorrect + ' of 7 questions correct!')
+
+alert('Hey there ' + userName + ' guessed ' + questionCorrect + ' of 7 questions correct! Thank you for your time.')
 console.log(questionCorrect)
