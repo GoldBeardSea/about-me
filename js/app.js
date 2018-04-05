@@ -75,57 +75,57 @@ console.log(questionCorrect);
 
 var guessesRemaining = 4;
 
-// function callGear(){
-//   while(guessesRemaining > 0) {
-//     console.log(guessesRemaining);
-//     var questionGear = prompt('How many pieces of music gear do I own?');
-//     console.log(questionGear);
-//     guessesRemaining--;
-//     if(parseInt(questionGear) < 16) {
-//       alert('You need to guess higher');
-//     }
-//     if(parseInt(questionGear) > 16) {
-//       alert('You need to guess lower');
-//     }
-//     if(parseInt(questionGear) === 16) {
-//       alert('That is correct');
-//       questionCorrect++;
-//       break;
-//     }
-//   }
-// }
-// callGear();
-// console.log(questionCorrect);
+function callGear(){
+  while(guessesRemaining > 0) {
+    console.log(guessesRemaining);
+    var questionGear = prompt('How many pieces of music gear do I own?');
+    console.log(questionGear);
+    guessesRemaining--;
+    if(parseInt(questionGear) < 16) {
+      alert('You need to guess higher');
+    }
+    if(parseInt(questionGear) > 16) {
+      alert('You need to guess lower');
+    }
+    if(parseInt(questionGear) === 16) {
+      alert('That is correct');
+      questionCorrect++;
+      break;
+    }
+  }
+}
+callGear();
+console.log(questionCorrect);
 
-// var statesRemaining = 6;
+var statesRemaining = 6;
 
-// var statesLived = ['CALIFORNIA', 'VIRGINIA', 'TENNESSEE', 'GEORGIA', 'GERMANY', 'AFGHANISTAN'];
-// // var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
-// var foundAnswer = false;
-// // console.log('state:', stateGuess);
-// // console.log(typeof stateGuess);
+var statesLived = ['CALIFORNIA', 'VIRGINIA', 'TENNESSEE', 'GEORGIA', 'GERMANY', 'AFGHANISTAN'];
+var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
+var foundAnswer = false;
+console.log('state:', stateGuess);
+console.log(typeof stateGuess);
 
-// function callStates(){
-//   while (statesRemaining > 0) {
-//     var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
-//     statesRemaining--;
-//     for(var i = 0; i < statesLived.length; i++) {
-//       console.log('state:', stateGuess);
-//       if(stateGuess === statesLived[i]) {
-//         foundAnswer = true;
-//         break;
-//       }
-//     }
-//     if(foundAnswer === true){
-//       alert('Correct');
-//       questionCorrect++;
-//       break;
-//     } else {
-//       alert('Try again');
-//     }
-//   }
-// }
-// callStates();
+function callStates(){
+  while (statesRemaining > 0) {
+    var stateGuess = prompt('Can you guess a state or country where I have lived?').toUpperCase();
+    statesRemaining--;
+    for(var i = 0; i < statesLived.length; i++) {
+      console.log('state:', stateGuess);
+      if(stateGuess === statesLived[i]) {
+        foundAnswer = true;
+        break;
+      }
+    }
+    if(foundAnswer === true){
+      alert('Correct');
+      questionCorrect++;
+      break;
+    } else {
+      alert('Try again');
+    }
+  }
+}
+callStates();
 
 alert('Hey there ' + userName + ' guessed ' + questionCorrect + ' of 7 questions correct! Thank you for your time.');
 console.log(questionCorrect);
