@@ -30,32 +30,44 @@ function callMusic(){
 callMusic();
 console.log(questionCorrect);
 
-// var questionPeeps = prompt('Do I love eating peeps?').toUpperCase();
-// console.log(questionPeeps);
-// if(questionPeeps === 'NO' || questionPeeps === 'N') {
-//   questionCorrect++;
-//   alert('Normal marshmallow is tasty enough, heck no to peeps!');
-// } else {
-//   alert('Get out of town! WRONG.');
-// }
+function callPeeps(){
+  var questionPeeps = prompt('Do I love eating peeps?').toUpperCase();
+  console.log(questionPeeps);
+  if(questionPeeps === 'NO' || questionPeeps === 'N') {
+    questionCorrect++;
+    alert('Normal marshmallow is tasty enough, heck no to peeps!');
+  } else {
+    alert('Get out of town! WRONG.');
+  }
+}
+callPeeps();
+console.log(questionCorrect);
 
-// var questionLingual = prompt('Is english the only language that I speak?').toUpperCase();
-// console.log(questionLingual);
-// if(questionLingual === 'NO' || questionLingual === 'N') {
-//   questionCorrect++;
-//   alert('Richtig, I grew up speaking German and English!');
-// } else {
-//   alert('Wrong, bucko, ich spreche Deutsch');
-// }
+function callGerman(){
+  var questionLingual = prompt('Is english the only language that I speak?').toUpperCase();
+  console.log(questionLingual);
+  if(questionLingual === 'NO' || questionLingual === 'N') {
+    questionCorrect++;
+    alert('Richtig, I grew up speaking German and English!');
+  } else {
+    alert('Wrong, bucko, ich spreche Deutsch');
+  }
+}
+callGerman();
+console.log(questionCorrect);
 
-// var questionSeason = prompt('Do I hate summer as a season?').toUpperCase();
-// console.log(questionSeason);
-// if(questionSeason === 'YES' || questionSeason === 'Y') {
-//   questionCorrect++;
-//   alert('Yes, the temperature of the earth is too damn high!');
-// } else {
-//   alert('Wrong, give me the Winter.');
-// }
+function callSeason(){
+  var questionSeason = prompt('Do I hate summer as a season?').toUpperCase();
+  console.log(questionSeason);
+  if(questionSeason === 'YES' || questionSeason === 'Y') {
+    questionCorrect++;
+    alert('Yes, the temperature of the earth is too damn high!');
+  } else {
+    alert('Wrong, give me the Winter.');
+  }
+}
+callSeason();
+console.log(questionCorrect);
 
 // var guessesRemaining = 4;
 
