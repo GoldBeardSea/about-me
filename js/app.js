@@ -2,19 +2,20 @@
 
 var questionCorrect = 0;
 
-console.log(questionCorrect);
-
 var userName = prompt('Might I ask your name first?');
 alert('Alright ' + userName + ' it is time to play a game, please answer Yes/No or Y/n');
 
-var questionCat = prompt('Do I love cats?').toUpperCase();
+function callCat(){
+  var questionCat = prompt('Do I love cats?').toUpperCase();
 console.log(questionCat);
-if(questionCat === 'YES' || questionCat === 'Y') {
-  questionCorrect++;
-  alert('Yes! I help foster and raise cats for adoption.');
-} else {
-  alert('Smooth move, ExLax! Goose egg on this one.');
+  if(questionCat === 'YES' || questionCat === 'Y') {
+    questionCorrect++;
+    alert('Yes! I help foster and raise cats for adoption.');
+  } else {
+    alert('Smooth move, ExLax! Goose egg on this one.');
+  }
 }
+callCat();
 
 // var questionMusic = prompt('Do I make experimental music?').toUpperCase();
 // console.log(questionMusic);
